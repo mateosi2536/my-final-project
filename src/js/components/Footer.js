@@ -11,8 +11,8 @@ export function Footer() {
               <span>PlenoNet</span>
             </div>
             <p class="footer-description">
-              Conectamos tu mundo con internet de alta velocidad y confiable. 
-              Tecnología de fibra óptica para tu hogar y negocio.
+              We connect your world with high-speed and reliable internet.
+              Fiber optic technology for your home and business.
             </p>
             <div class="social-links">
               <a href="https://facebook.com" class="social-link" aria-label="Facebook" target="_blank">
@@ -39,18 +39,18 @@ export function Footer() {
           </div>
 
           <div class="footer-section">
-            <h3>Enlaces Rápidos</h3>
+            <h3>Quick Links</h3>
             <ul class="footer-links">
-              <li><a href="/">Inicio</a></li>
-              <li><a href="/plans.html">Planes</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/plans.html">Plans</a></li>
               <li><a href="/speedtest.html">Speed Test</a></li>
-              <li><a href="#soporte">Soporte</a></li>
-              <li><a href="#cobertura">Cobertura</a></li>
+              <li><a href="#support">Support</a></li>
+              <li><a href="#coverage">Coverage</a></li>
             </ul>
           </div>
 
           <div class="footer-section">
-            <h3>Contacto</h3>
+            <h3>Contact</h3>
             <ul class="contact-info">
               <li>
                 <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
@@ -68,14 +68,14 @@ export function Footer() {
                 <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                 </svg>
-                <span>Ciudad, País</span>
+                <span>City, Country</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div class="footer-bottom">
-          <p>&copy; ${currentYear} PlenoNet - Mateo. Todos los derechos reservados.</p>
+          <p>&copy; ${currentYear} PlenoNet - Mateo. All rights reserved.</p>
         </div>
       </div>
     </footer>
