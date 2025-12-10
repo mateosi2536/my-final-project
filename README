@@ -21,3 +21,8 @@ Pages:
 
 Run locally: npm run dev
 Build for production: npm run build
+
+Deploy ready for:
+- Netlify
+- GitHub Pages
+- Vercel
