@@ -13,7 +13,7 @@ export function Header() {
           <ul class="nav-list">
             <li><a href="/" class="nav-link ${currentPath === '/' ? 'active' : ''}">Home</a></li>
             <li><a href="/plans.html" class="nav-link ${currentPath === '/plans.html' ? 'active' : ''}">Plans</a></li>
-            <li><a href="/speedtest.html" class="nav-link ${currentPath === '/speedtest.html' ? 'active' : ''}">Speed Test</a></li>
+            <li><a href="/network-info.html" class="nav-link ${currentPath === '/network-info.html' ? 'active' : ''}">Network Info</a></li>
           </ul>
         </nav>
 
@@ -28,7 +28,7 @@ export function Header() {
         <ul class="nav-list">
           <li><a href="/" class="nav-link ${currentPath === '/' ? 'active' : ''}">Home</a></li>
           <li><a href="/plans.html" class="nav-link ${currentPath === '/plans.html' ? 'active' : ''}">Plans</a></li>
-          <li><a href="/speedtest.html" class="nav-link ${currentPath === '/speedtest.html' ? 'active' : ''}">Speed Test</a></li>
+          <li><a href="/network-info.html" class="nav-link ${currentPath === '/network-info.html' ? 'active' : ''}">Network Info</a></li>
         </ul>
       </nav>
 
