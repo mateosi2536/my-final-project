@@ -480,6 +480,30 @@ main {
   box-shadow: var(--shadow-lg);
 }
 
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .plans-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  .info-display {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .comparison-section {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: 80px 20px 60px;
