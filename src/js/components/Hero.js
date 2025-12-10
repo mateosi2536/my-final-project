@@ -69,6 +69,22 @@ export function initHero() {
       addressLower.includes(city)
     );
 
+    saveCoverageCheck(address, hasCoverage);
+    saveSearchToHistory(address);
+
+    if (hasCoverage) {
+      alert(`✅ Great news! We have coverage in your area.\n\nAddress: ${address}\n\nAvailable plans: Basic 50, Premium 100, Ultra 200`);
+    } else {
+      alert(`❌ Sorry, we don't have coverage in this area yet.\n\nAddress: ${address}\n\nWe're expanding our coverage every month. Stay tuned!`);
+    }
+  }
+
+  function checkCoverage(address) {
+    const addressLower = address.toLowerCase();
+    const hasCoverage = coverageData.coveredCities.some(city =>
+      addressLower.includes(city)
+    );
+
     if (hasCoverage) {
       alert(`✅ Great news! We have coverage in your area.\n\nAddress: ${address}\n\nAvailable plans: Basic 50, Premium 100, Ultra 200`);
     } else {
@@ -115,4 +131,5 @@ export function initHero() {
 
     dropdown.style.display = predictions.length > 0 ? 'block' : 'none';
   }
+
 }

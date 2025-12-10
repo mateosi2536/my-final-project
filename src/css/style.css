@@ -510,4 +510,573 @@ main {
     width: 100%;
     max-width: 280px;
   }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .speed-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .speed-number {
+    font-size: 2rem;
+  }
+}
+
+.about-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.about-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.about-features {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.about-features li {
+  padding: 8px 0;
+  color: var(--text-gray);
+  font-size: 1.1rem;
+}
+
+.cta-link {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.cta-link:hover {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speed-indicator {
+  text-align: center;
+}
+
+.speed-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 20px;
+}
+
+.speed-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+}
+
+.speed-unit {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  opacity: 0.9;
+}
+
+.plans-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.plans-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.plans-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.plans-header p {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+  .plans-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 50px;
+    padding: 5px;
+    box-shadow: var(--shadow-sm);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .plans-actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .compare-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #0099cc 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .compare-btn:hover {
+    background: linear-gradient(135deg, #0099cc 0%, var(--secondary-color) 100%);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .compare-icon {
+    font-size: 1.2rem;
+  }
+
+.tab-button {
+  padding: 12px 30px;
+  border: none;
+  background: transparent;
+  border-radius: 50px;
+  font-weight: 600;
+  color: var(--text-gray);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.tab-button.active {
+  background: var(--primary-color);
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.plans-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.plans-grid {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.plans-grid.active {
+  display: grid;
+}
+
+.plan-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.plan-card.popular {
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 32px rgba(255, 107, 0, 0.2);
+}
+
+.plan-card.recommended {
+  border-color: var(--secondary-color);
+  box-shadow: 0 8px 32px rgba(0, 212, 255, 0.2);
+}
+
+.popular-badge,
+.recommended-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--accent-color);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.recommended-badge {
+  background: var(--secondary-color);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.plan-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.plan-speed {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.plan-pricing {
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.plan-price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 5px;
+}
+
+.billing-cycle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-gray);
+}
+
+.original-price {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+  text-decoration: line-through;
+  margin-top: 5px;
+}
+
+.plan-features {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.plan-features li {
+  padding: 8px 0;
+  position: relative;
+  padding-left: 25px;
+  color: var(--text-gray);
+}
+
+.plan-features li:before {
+  content: "✓";
+  color: var(--primary-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.plan-contract {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-gray);
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.plan-button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.plan-button:hover {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+  .plans-section {
+    padding: 60px 20px;
+  }
+
+  .plans-header h2 {
+    font-size: 2rem;
+  }
+
+  .plans-tabs {
+    margin-bottom: 30px;
+  }
+
+  .tab-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .plan-card {
+    padding: 25px;
+  }
+
+  .plan-name {
+    font-size: 1.3rem;
+  }
+
+  .plan-speed {
+    font-size: 1.8rem;
+  }
+
+  .plan-price {
+    font-size: 2.2rem;
+  }
+}
+
+.comparison-section {
+  padding: 80px 20px;
+  background: white;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .comparison-section {
+    display: block;
+  }
+}
+
+.comparison-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.comparison-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.comparison-header p {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+}
+
+.comparison-table-container {
+  overflow-x: auto;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: var(--shadow-lg);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 20px 15px;
+  text-align: center;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.feature-column {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: left;
+  width: 200px;
+  position: sticky;
+  left: 0;
+  z-index: 10;
+}
+
+.plan-column {
+  position: relative;
+  width: 200px;
+  border-left: 2px solid transparent;
+  transition: var(--transition);
+}
+
+.plan-column.popular {
+  border-left-color: var(--accent-color);
+  background: linear-gradient(135deg, rgba(255, 107, 0, 0.05) 0%, rgba(255, 107, 0, 0.02) 100%);
+}
+
+.plan-column.recommended {
+  border-left-color: var(--secondary-color);
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(0, 212, 255, 0.02) 100%);
+}
+
+.plan-column:hover {
+  background: rgba(0, 102, 255, 0.05);
+  transform: scale(1.02);
+}
+
+.plan-header-cell {
+  position: relative;
+}
+
+.table-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-color);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table-badge.recommended {
+  background: var(--secondary-color);
+}
+
+.plan-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.plan-speed {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+
+.plan-price span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-gray);
+}
+
+.choose-plan-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.choose-plan-btn:hover {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+  transform: translateY(-2px);
+}
+
+.feature-name {
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: left;
+}
+
+.plan-feature {
+  color: var(--text-gray);
+  font-weight: 500;
+}
+
+.plan-feature.popular {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.comparison-table tbody tr:hover .feature-name {
+  color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .comparison-section {
+    display: none;
+  }
 }

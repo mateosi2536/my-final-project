@@ -1,0 +1,194 @@
+{
+  "residentialPlans": [
+    {
+      "id": "basic-50",
+      "name": "Basic 50",
+      "speed": "50 Mbps",
+      "price": 29.99,
+      "originalPrice": null,
+      "billingCycle": "monthly",
+      "features": [
+        "Download: 50 Mbps",
+        "Upload: 10 Mbps",
+        "No data caps",
+        "24/7 support",
+        "Free modem rental"
+      ],
+      "popular": false,
+      "recommended": false,
+      "category": "starter",
+      "contractLength": 12
+    },
+    {
+      "id": "premium-100",
+      "name": "Premium 100",
+      "speed": "100 Mbps",
+      "price": 49.99,
+      "originalPrice": 59.99,
+      "billingCycle": "monthly",
+      "features": [
+        "Download: 100 Mbps",
+        "Upload: 25 Mbps",
+        "No data caps",
+        "Priority support",
+        "Free WiFi router",
+        "Static IP available"
+      ],
+      "popular": true,
+      "recommended": false,
+      "category": "popular",
+      "contractLength": 12
+    },
+    {
+      "id": "ultra-200",
+      "name": "Ultra 200",
+      "speed": "200 Mbps",
+      "price": 69.99,
+      "originalPrice": null,
+      "billingCycle": "monthly",
+      "features": [
+        "Download: 200 Mbps",
+        "Upload: 50 Mbps",
+        "No data caps",
+        "Premium support",
+        "Mesh WiFi system",
+        "Free installation",
+        "IPv6 support"
+      ],
+      "popular": false,
+      "recommended": true,
+      "category": "premium",
+      "contractLength": 24
+    },
+    {
+      "id": "fiber-500",
+      "name": "Fiber 500",
+      "speed": "500 Mbps",
+      "price": 99.99,
+      "originalPrice": 119.99,
+      "billingCycle": "monthly",
+      "features": [
+        "Download: 500 Mbps",
+        "Upload: 500 Mbps",
+        "Symmetric speeds",
+        "No data caps",
+        "White glove service",
+        "Advanced WiFi 6",
+        "Business-grade SLA"
+      ],
+      "popular": false,
+      "recommended": false,
+      "category": "ultra",
+      "contractLength": 24
+    },
+    {
+      "id": "fiber-1000",
+      "name": "Fiber 1000",
+      "speed": "1 Gbps",
+      "price": 149.99,
+      "originalPrice": null,
+      "billingCycle": "monthly",
+      "features": [
+        "Download: 1000 Mbps",
+        "Upload: 1000 Mbps",
+        "Symmetric gigabit",
+        "No data caps",
+        "Dedicated account manager",
+        "WiFi 6E mesh system",
+        "99.9% uptime guarantee"
+      ],
+      "popular": false,
+      "recommended": false,
+      "category": "enterprise",
+      "contractLength": 36
+    }
+  ],
+  "businessPlans": [
+    {
+      "id": "business-100",
+      "name": "Business 100",
+      "speed": "100 Mbps",
+      "price": 79.99,
+      "originalPrice": null,
+      "billingCycle": "monthly",
+      "features": [
+        "Download: 100 Mbps",
+        "Upload: 25 Mbps",
+        "Business SLA",
+        "Static IP included",
+        "Priority support",
+        "Free router",
+        "99.5% uptime"
+      ],
+      "popular": false,
+      "recommended": false,
+      "category": "small-business",
+      "contractLength": 24
+    },
+    {
+      "id": "business-200",
+      "name": "Business 200",
+      "speed": "200 Mbps",
+      "price": 119.99,
+      "originalPrice": null,
+      "billingCycle": "monthly",
+      "features": [
+        "Download: 200 Mbps",
+        "Upload: 50 Mbps",
+        "Enhanced SLA",
+        "5 static IPs",
+        "24/7 phone support",
+        "Managed router",
+        "99.8% uptime"
+      ],
+      "popular": true,
+      "recommended": false,
+      "category": "medium-business",
+      "contractLength": 24
+    },
+    {
+      "id": "business-500",
+      "name": "Business 500",
+      "speed": "500 Mbps",
+      "price": 199.99,
+      "originalPrice": 249.99,
+      "billingCycle": "monthly",
+      "features": [
+        "Download: 500 Mbps",
+        "Upload: 500 Mbps",
+        "Symmetric speeds",
+        "Premium SLA",
+        "10 static IPs",
+        "Dedicated support line",
+        "Advanced security",
+        "99.9% uptime"
+      ],
+      "popular": false,
+      "recommended": true,
+      "category": "large-business",
+      "contractLength": 36
+    },
+    {
+      "id": "business-1000",
+      "name": "Business 1000",
+      "speed": "1 Gbps",
+      "price": 349.99,
+      "originalPrice": null,
+      "billingCycle": "monthly",
+      "features": [
+        "Download: 1000 Mbps",
+        "Upload: 1000 Mbps",
+        "Gigabit symmetric",
+        "Enterprise SLA",
+        "25 static IPs",
+        "Dedicated account team",
+        "Advanced networking",
+        "99.95% uptime"
+      ],
+      "popular": false,
+      "recommended": false,
+      "category": "enterprise",
+      "contractLength": 36
+    }
+  ]
+}
