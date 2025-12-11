@@ -542,30 +542,26 @@ main {
   }
 
   .about-image {
-    order: 1; /* Mover abajo en móviles y tablets */
-  }
-
-  /* Tablets y móviles: ajustar tamaño del círculo */
-  @media (max-width: 768px) {
-    .speed-circle {
-      width: min(120px, 30vw);
-      height: min(120px, 30vw);
-    }
-
-    .speed-number {
-      font-size: 1.5rem;
-    }
-  }
-
-  /* Móviles muy pequeños: ocultar el componente de velocidad */
-  @media (max-width: 480px) {
-    .about-image {
-      display: none;
-    }
+    order: 1;
   }
 
   .about-text h2 {
     font-size: 2rem;
+  }
+
+  .speed-circle {
+    width: min(120px, 30vw);
+    height: min(120px, 30vw);
+  }
+
+  .speed-number {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-image {
+    display: none;
   }
 
   .speed-circle {
@@ -633,12 +629,6 @@ main {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
-}
-
-.about-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .speed-indicator {
