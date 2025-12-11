@@ -32,11 +32,8 @@ async function getISPInfo() {
     getInfoBtn.disabled = true
     status.textContent = 'Getting your internet information...'
 
-    console.log('🌐 Fetching ISP info from ipinfo.io...')
     const response = await fetch('https://ipinfo.io/json')
     const data = await response.json()
-
-    console.log('✅ ISP Info received:', data)
 
     if (response.ok) {
       updateISPInfo(data)
@@ -47,7 +44,7 @@ async function getISPInfo() {
     }
 
   } catch (error) {
-    console.error('❌ ISP info error:', error)
+    console.error('ISP info error:', error);
     status.textContent = 'Failed to get information. Please try again.'
   } finally {
     getInfoBtn.disabled = false
@@ -75,7 +72,6 @@ function saveISPInfo(data) {
     timestamp: new Date().toISOString()
   }
   localStorage.setItem('plenoNet_ispInfo', JSON.stringify(ispInfo))
-  console.log('💾 ISP info saved:', ispInfo)
 }
 
 function loadSavedISPInfo() {
@@ -86,7 +82,7 @@ function loadSavedISPInfo() {
       updateISPInfo(data)
       document.getElementById('isp-status').textContent = 'Showing saved information'
     } catch (error) {
-      console.error('Error loading saved ISP info:', error)
+      console.error('Error loading saved ISP info:', error);
     }
   }
 }

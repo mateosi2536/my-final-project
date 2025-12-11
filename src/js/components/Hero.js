@@ -102,7 +102,6 @@ export function initHero() {
       if (Array.isArray(data) && data.length > 0) {
         showSuggestions(data);
       } else {
-        console.log('No places found');
         dropdown.style.display = 'none';
       }
     } catch (error) {
@@ -121,7 +120,6 @@ export function initHero() {
       item.addEventListener('click', () => {
         input.value = place.display_name;
         dropdown.style.display = 'none';
-        console.log('Address selected:', place.display_name);
       });
       dropdown.appendChild(item);
     });

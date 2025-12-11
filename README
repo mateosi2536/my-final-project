@@ -3,7 +3,7 @@ PlenoNet - High-Speed Internet Provider Website
 A modern, responsive web application for PlenoNet internet services.
 
 Features:
-- Address coverage checker with Google Places autocomplete
+- Address coverage checker with Nominatim autocomplete
 - Interactive plan selection with pricing cards
 - Network information display using ipinfo.io API
 - Fully mobile-responsive design
@@ -11,7 +11,7 @@ Features:
 Technologies:
 - Vanilla JavaScript (ES6 modules)
 - HTML5 & CSS3 with modern layouts
-- Google Places API for address autocomplete
+- Nominatim (OpenStreetMap) for address autocomplete
 - ipinfo.io API for network information
 
 Pages:
