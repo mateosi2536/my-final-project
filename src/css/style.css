@@ -542,7 +542,19 @@ main {
   }
 
   .about-image {
-    order: -1; /* Mover arriba en móviles muy pequeños */
+    order: 1; /* Mover abajo en móviles y tablets */
+  }
+
+  /* Tablets y móviles: ajustar tamaño del círculo */
+  @media (max-width: 768px) {
+    .speed-circle {
+      width: min(120px, 30vw);
+      height: min(120px, 30vw);
+    }
+
+    .speed-number {
+      font-size: 1.5rem;
+    }
   }
 
   /* Móviles muy pequeños: ocultar el componente de velocidad */
