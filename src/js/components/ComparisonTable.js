@@ -85,3 +85,4 @@ export function ComparisonTable(plans) {
     </div>
   `;
 }
+

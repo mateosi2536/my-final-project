@@ -94,18 +94,15 @@ export function initHero() {
 
   async function searchPlaces(query) {
     try {
-      const baseUrl = `https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${encodeURIComponent(query)}&key=${API_KEY}&components=country:mx&types=address`;
-
-      const corsProxy = 'https://cors-anywhere.herokuapp.com/';
-      const url = corsProxy + baseUrl;
+      const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&countrycodes=mx&format=json&addressdetails=1&limit=5`;
 
       const response = await fetch(url);
       const data = await response.json();
 
-      if (data.status === 'OK') {
-        showSuggestions(data.predictions);
+      if (Array.isArray(data) && data.length > 0) {
+        showSuggestions(data);
       } else {
-        console.error('Places API error:', data.status);
+        console.log('No places found');
         dropdown.style.display = 'none';
       }
     } catch (error) {
@@ -114,22 +111,22 @@ export function initHero() {
     }
   }
 
-  function showSuggestions(predictions) {
+  function showSuggestions(places) {
     dropdown.innerHTML = '';
 
-    predictions.forEach(prediction => {
+    places.forEach(place => {
       const item = document.createElement('div');
       item.className = 'autocomplete-item';
-      item.textContent = prediction.description;
+      item.textContent = place.display_name;
       item.addEventListener('click', () => {
-        input.value = prediction.description;
+        input.value = place.display_name;
         dropdown.style.display = 'none';
-        console.log('Address selected:', prediction.description);
+        console.log('Address selected:', place.display_name);
       });
       dropdown.appendChild(item);
     });
 
-    dropdown.style.display = predictions.length > 0 ? 'block' : 'none';
+    dropdown.style.display = places.length > 0 ? 'block' : 'none';
   }
 
 }

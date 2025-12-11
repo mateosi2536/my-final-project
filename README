@@ -23,6 +23,13 @@ Run locally: npm run dev
 Build for production: npm run build
 
 Deploy ready for:
-- Netlify
+- Netlify (multi-page configured)
 - GitHub Pages
 - Vercel
+
+Build includes:
+- index.html (home)
+- plans.html (plans page)
+- network-info.html (network info)
+
+Vite configured for multi-page build
