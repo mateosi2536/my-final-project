@@ -541,17 +541,28 @@ main {
     text-align: center;
   }
 
+  .about-image {
+    order: -1; /* Mover arriba en móviles muy pequeños */
+  }
+
+  /* Móviles muy pequeños: ocultar el componente de velocidad */
+  @media (max-width: 480px) {
+    .about-image {
+      display: none;
+    }
+  }
+
   .about-text h2 {
     font-size: 2rem;
   }
 
   .speed-circle {
-    width: 120px;
-    height: 120px;
+    width: min(100px, 25vw);
+    height: min(100px, 25vw);
   }
 
   .speed-number {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -623,8 +634,8 @@ main {
 }
 
 .speed-circle {
-  width: 150px;
-  height: 150px;
+  width: min(150px, 35vw);
+  height: min(150px, 35vw);
   border-radius: 50%;
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   display: flex;
