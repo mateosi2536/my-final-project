@@ -43,7 +43,7 @@ export function Footer() {
             <ul class="footer-links">
               <li><a href="/">Home</a></li>
               <li><a href="/plans.html">Plans</a></li>
-              <li><a href="/speedtest.html">Speed Test</a></li>
+              <li><a href="/network-info.html">Network Info</a></li>
               <li><a href="#support">Support</a></li>
               <li><a href="#coverage">Coverage</a></li>
             </ul>
